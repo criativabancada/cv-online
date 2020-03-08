@@ -13,21 +13,26 @@ a, h1, h2, h3, ul, ol, li { text-decoration: none; list-style: none; font-weight
 a:hover {	text-decoration: underline; }
 p {	margin: 0.25rem !important; }
 
-.left { width: 50%; padding: 0 30px 0 60px; text-align: left; }
-.right { width: 50%; padding: 0 60px 0 30px; text-align: right; }
+.left { width: 35%; padding: 0 0 0 100px; text-align: left; }
+.right { width: 35%; padding: 0 100px 0 0; text-align: right; }
 
-header { border-bottom: 1px dotted black;
+header { border-bottom: 1px dashed #7c7c7c;
 	display: flex; padding: 0 0 20px;
     align-items: flex-end;
-    height: 200px; }
+	justify-content: space-between;
+    height: 200px; margin: 0 0 35px;}
 
-	#name { font-family: aAutoSignature, Times, serif; font-size: 3.8em; }
-	#surname { font-family: Spartan, sans-serif; font-size: 3em; letter-spacing: 0.2em; }
+	#name { font-family: aAutoSignature, Times, serif; font-size: 5.5em; position: relative; top: 35px}
+	#surname { text-transform: uppercase; font-family: Spartan, sans-serif; font-size: 3.5em; letter-spacing: 0.4em; position: relative; left: 35px}
 	#contato { font-style: italic; }
 
-.expa {}
-article h1 { color:var(--accent);}
-article p { color:#ccc;}
+/*main { display: flex; justify-content: space-between; }*/
+
+h1 { color:var(--accent); text-transform: uppercase; font-family: Spartan, sans-serif; letter-spacing: 0.2em}
+h2 { font-weight: bold; font-size: 1em; }
+h3 { font-weight: normal; font-style: italic; font-size: 1em; float: right; }
+h4 { font-weight: bold; font-size: 1.2em; }
+article { margin: 0 0 20px; }
 
 img#profile {	z-index: 100; border-radius: 50%; border: 4px #fff solid; box-shadow: 0px 0px 11px 1px var(--accent); height: 90px; width: 90px; }
 
@@ -35,8 +40,8 @@ img#profile {	z-index: 100; border-radius: 50%; border: 4px #fff solid; box-shad
 .info .item img {	width: 10px; }
 .info .item { margin: 0; width: auto; height: auto; display: inline-block; }
 
-footer { width: 100%; text-align: center; font: 11px Nunito, sans-serif; height: 35px; position: fixed; bottom: 0;	color: var(--credits)}
-footer img { margin: 0 0 -4px; width: 16px; height: 16px; }
+footer { color: #7c7c7c; border-top: 1px dashed #7c7c7c; background: #FFF; display: flex; align-items: center; justify-content: space-around; width: 100%; text-align: center; font-size: 0.8em; height: 35px; position: fixed; bottom: 0;	color: var(--credits)}
+footer img { margin: 0 5px -1px; width: 16px; height: 16px; }
 
 @media screen and (min-width: 600px) {
 .box { width: 35%; }
